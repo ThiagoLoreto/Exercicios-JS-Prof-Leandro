@@ -24,3 +24,24 @@ function contadorNotas (dinheiro) {
 contadorNotas(18)
 console.log('outro teste...')
 contadorNotas(157)
+
+/*
+function contadorNotas (dinheiro) {
+    const cedulas = [100, 50, 10, 5, 1]
+    const valores = []
+    for(var i in cedulas) {
+        const quantidade = parseInt(dinheiro / cedulas[i])
+        const resto = dinheiro % cedulas[i]  
+        if(quantidade == 0){
+            valores.push('')
+            dinheiro = resto
+        } else {
+            valores.push(`${quantidade} nota(s) de R$${cedulas[i]}.`)
+            dinheiro = resto
+        }
+    }
+    console.log(valores[0], valores[1], valores[2], valores[3], valores [4])
+}
+
+contadorNotas(18)
+*/
